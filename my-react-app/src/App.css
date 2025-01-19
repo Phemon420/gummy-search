@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: rgb(17 24 39);
+
 }
 
 .container{
@@ -16,11 +17,15 @@ main{
     padding: 20px;
 }
 .sidebar{
-    background: #582474;
+    background: rgb(31 ,41 ,55);
     color: #fff;
     height: 100vh;
     width: 200px;
     transition: all 0.5s;
+    position: sticky; /* Changed to sticky */
+    top: 0; /* Ensure it stays at the top */
+    align-self: flex-start;
+    /* position: fixed; */
 }
 .top_section{
     display: flex;

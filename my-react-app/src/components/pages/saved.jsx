@@ -7,6 +7,7 @@ const Kgf=styled("svg")`
     width: 3em;
     height: 3em;
     display: inline-block;
+    background-color: rgba(55, 65, 81);
     `;
 const Fcu=styled("div")`
     margin-top: 2em;
@@ -17,16 +18,23 @@ const Fcu=styled("div")`
 `;
 const Fcuk=styled("div")`
     padding: 1em;
-    background-color:rgb(221, 221, 221);
+    background-color:rgb(55 ,65, 81);
     margin-bottom: 1em;
-    border-radius: 50%;
+    border-radius: .375rem;
 `;
 const Drdo=styled("h2")`
-
+    color:white;
+    opacity: .5;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
 `;
 
 const Drdo1=styled("p")`
-
+    color:rgb(107 114 128);
+    font-size: 12px;
+    font-weight: 250;
+    letter-spacing: .025em;
 `;
 
 const Searchbar = styled("div")`
@@ -40,12 +48,19 @@ const Kmno = styled("p")`
     margin-left: 65px;
     margin-bottom: 2px;
     font-size: 13px;
+    color:rgb(156 163 175);
 `;
 
 const Emi = styled("div")`
     display: flex;
     flex-direction: row;
     justify-content: center;
+`;
+
+const Fudge = styled(TextField)`
+    border: 1px solid #e5e7eb;
+    border-radius: .375rem;
+    background-color: rgb(31 41 55);
 `;
 
 const Saved=()=>{
@@ -61,15 +76,26 @@ const Saved=()=>{
             <Searchbar>
             <Kmno>Name your custom audience</Kmno>
             <Emi>
-            <TextField
+            <Fudge
                 variant="outlined"
                 placeholder="Pick a short name, like Digital Marketing or Movie-Goers "
                 size="small"
                 style={{ width: "70%" }}
+                InputProps={{
+                    style: {
+                    color: "#fff", // Text color
+                    },
+                    inputProps: {
+                    style: {
+                        color: "#fff", // Text color
+                        "::placeholder": { color: "rgb(255 255 255)" }, // Placeholder color
+                    },
+                    },
+                }}
             />
             <Button
                 variant="contained"
-                style={{ marginLeft: "10px", backgroundColor: "#582474" }}
+                style={{ marginLeft: "10px", backgroundColor: "rgb(8 145 178)" }}
             >
                 Find Communities
             </Button>

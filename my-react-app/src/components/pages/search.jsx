@@ -6,9 +6,10 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 
+
 const StyledText = styled("p")({
       fontSize: '16px', // Set the font size
-      color: '#582474', // Set the text color
+      color: 'white', // Set the text color
       marginLeft: '5px', // Set the left margin
   });
 
@@ -32,8 +33,8 @@ const Fcuk = styled("div")({
         width: "375px",
         textAlign: "left",
         position: "relative",
-        color: "white", // Light gray text
-        backgroundColor: "#9c9b99", // White background
+        color: "rgb(156 163 175)", // Light gray text
+        backgroundColor: "rgb(31 41 55)", // White background
         border: "1px solid transparent", // Transparent border initially
         padding: "16px 48px", // Adjust padding to create space for icons
         fontSize: "14px",
@@ -86,7 +87,7 @@ const StyledSearchBar = styled("div")({
     alignItems: "center",
     border: "1px solid transparent",
     borderRadius: "4px",
-    backgroundColor: "#9c9b99",
+    backgroundColor: "rgb(31 41 55)",
     "&:focus-within": {
       borderColor: "black", // Highlight border on focus
     },
@@ -99,10 +100,10 @@ const StyledSearchBar = styled("div")({
     borderRadius: "8px",
     backgroundColor: "transparent",
     fontSize: "14px",
-    color: "white", // Light gray text
+    color: "rgb(156 163 175)", // Light gray text
     outline: "none", // Remove focus outline
     "&::placeholder": {
-      color: "white", // Placeholder text color
+      color: "rgb(156 163 175)", // Placeholder text color
     },
   });
   
@@ -112,7 +113,7 @@ const StyledSearchBar = styled("div")({
     width: '40%',
     textAlign: 'left',
     color: 'white', // Set text color to white
-    backgroundColor: '#582474', // Set background color to violet
+    backgroundColor: 'rgb(8 145 178)', // Set background color to violet
     padding: '16px 20px',
     borderRadius: '4px',
     textTransform: 'none',
@@ -126,6 +127,51 @@ const StyledSearchBar = styled("div")({
     },
   });
 
+  const Lodu = styled("div")({
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '2px',
+    marginTop: '20px',
+    fontSize: '14px',
+    color: 'white',
+    alignContent: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgb(31 41 55)',
+    maxWidth: '550px',
+    padding: '10px',
+    borderRadius: '4px',
+  });
+
+  const Bf = styled("div")({
+    marginLeft: '5px',
+  });
+
+  const Bft = styled("div")({
+    marginLeft: '-175px',
+  });
+
+  const Tft = styled("div")({
+    marginLeft: '-250px',
+  });
+
+
+  const Bestie = styled("div")({
+    marginTop: '5px',
+  });
+
+  const Gf = styled("div")({
+    marginLeft: 'auto', 
+  });
+
+  const Judo = styled("div")({
+    marginTop: '170px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignContent: 'center',
+    justifyContent: 'center',
+    marginLeft: '200px',
+    gap: '2px',
+  });
 const Search=()=>{
     return(
         
@@ -134,7 +180,7 @@ const Search=()=>{
             <Fcuk2>
                 <Kgf>
                     <StyledText>
-                        Audience to search
+                        Audience to Search
                     </StyledText>
                     <StyledButton>
                         <LeftIconWrapper>
@@ -191,12 +237,142 @@ const Search=()=>{
                     <span style={{fontSize:11}}>Perform Advance Search</span>
                 </CustomButton>
             </Fcuk2>
-            <Box>
+
+            
+            <Judo>
+                <hr style={{ width: '75%', borderColor: 'rgb(31 41 55)', marginBottom:'10px' }}></hr>
                 <StyledText>
                     Search Tips
                 </StyledText>
+                <Lodu>
+                  <Bf>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Bf>
+                  <Bestie>
+                  <div>Advance Search is available to Starter Plan users</div>
+                  </Bestie>
+                   <Gf>
+                   <a href="https://go.gummysearch.com/account/subscription/select/">
+                        <svg
+                        fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                        width="25" height="25">
+                          <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                          </path>
+                        </svg>
+                      </a>
+                   </Gf>   
+                </Lodu>
 
-            </Box>
+
+                <Lodu>
+                  <Bf>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Bf>
+                  <Bestie>
+                  <div>Read guide on helpful keywords to search for outbound opportunities</div>
+                  </Bestie>
+                   <Gf>
+                   <a href="https://go.gummysearch.com/account/subscription/select/">
+                        <svg
+                        fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                        width="25" height="25">
+                          <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                          </path>
+                        </svg>
+                      </a>
+                   </Gf>
+                </Lodu>
+
+
+                   <Lodu>
+                  <Bft>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Bft>
+                  <Bestie>
+                  <div>Search within an audience for more relevant keyword results</div>
+                  </Bestie>
+                </Lodu>
+
+                
+                <Lodu>
+                  <Bft>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Bft>
+                  <Bestie>
+                  <div>After searching, use visual filters to further filter down results</div>
+                  </Bestie>
+                </Lodu>
+
+                
+                <Lodu>
+                  <Tft>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Tft>
+                  <Bestie>
+                  <div>Bookmark useful conversations you come across</div>
+                  </Bestie>
+                </Lodu>
+
+                
+                <Lodu>
+                  <Bft style={{marginLeft: '-165px'}}>
+                  <svg
+                       fill="none" viewBox="0 0 24 24" stroke="white" class="h-6 w-6 mr-2 opacity-50 flex-shrink-0" aria-hidden="true"
+                       width="25" height="25"
+                      ><path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width= "2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                  </Bft>
+                  <Bestie>
+                  <div>Press the "Track" button to be notified of new keyword matches</div>
+                  </Bestie>
+                </Lodu>
+
+
+            </Judo>
         </Fcuk>
     );
 };

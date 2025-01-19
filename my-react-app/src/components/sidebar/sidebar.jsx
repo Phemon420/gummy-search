@@ -23,7 +23,6 @@ const Sidebar = ({ children }) => {
         <div className="top_section">
           <img src={brandinglogo} style={{ height: "2.5rem", width: "auto" }}></img>
         </div>
-        <hr></hr>
         <div className="middle_section">
           <div className="menu">
             {menuItems.map((item, index) => (
@@ -34,7 +33,7 @@ const Sidebar = ({ children }) => {
                 activeclassname="active"
               >
                 <div className="icon-with-tooltip">
-                  <img src={item.icon} alt={item.name} width="24" height="24" />
+                  <img className="Fd" src={item.icon} alt={item.name} width="24" height="24" />
                   <span className="tooltip">{item.name}</span>
                 </div>
               </NavLink>
@@ -52,7 +51,7 @@ const Sidebar = ({ children }) => {
                 activeclassname="active"
               >
                 <div className="icon-with-tooltip">
-                  <img src={item.icon} alt={item.name} width="30" height="30" />
+                  <img className="Fd" src={item.icon} alt={item.name} width="30" height="30" />
                   <span className="tooltip">{item.name}</span>
                 </div>
               </NavLink>

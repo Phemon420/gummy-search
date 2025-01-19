@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 const Onav=styled("div")(({ theme }) => ({
-  borderBottom: "1px solid black",
+  borderBottom: "1px solid white",
   margin: "0",
 }));
 const NavbarContainer = styled("div")(({ theme }) => ({
@@ -18,7 +18,7 @@ const NavbarContainer = styled("div")(({ theme }) => ({
 const Title = styled("h1")(({ theme }) => ({
   margin: 0,
   fontSize: "35px",
-  color: "black",
+  color: "white",
   marginLeft: "-20px",
 }));
 
@@ -32,13 +32,13 @@ const NavLinks = styled("ul")(({ theme }) => ({
 }));
 
 const NavLinkItem = styled(Link)(({ theme }) => ({
-  color: "black",
+  color: "white",
   textDecoration: "none",
   padding: "5px 0",
   borderBottom: "2px solid transparent",
   transition: "all 0.3s ease-in-out",
   "&:hover": {
-    borderBottom: "3px solid black",
+    borderBottom: "3px solid white",
   },
 }));
 
@@ -52,11 +52,11 @@ const NavBari1 = () => {
   return (
     <Onav>
         <NavbarContainer>
-      <Title>Audience</Title>
+      <Title>Advanced Search</Title>
       <ActionButtons>
         <Button
           variant="outlined"
-          style={{ color: "black", borderColor: "black" }}
+          style={{ color: "white", borderColor: "white" }}
         >
           Info
         </Button>

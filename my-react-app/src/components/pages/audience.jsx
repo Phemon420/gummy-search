@@ -7,7 +7,6 @@ import NavBari from "../common/navbar";
 import { styled } from "@mui/material";
 
 const Gfg=styled("div")`
-    background-color:rgb(255, 255, 255);
 `
 const Audience = () => {
   return (
